@@ -1,15 +1,14 @@
 .container {
-  display: flex; /* Enables flexbox on the container */
-  gap: 10px; /* Adds 10px space between the columns */
-  padding: 10px; /* Adds 10px space between the columns and the outer box */
-  box-sizing: border-box; /* Ensures padding is included in the element's total width */
-  width: 100%; /* Optional: Makes the container span the full width of its parent */
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 .column {
-  flex: 1 1 0; /* Makes both columns grow equally and have an initial size of 0 to ensure true equal width regardless of content */
-  /* Optional: Add some basic styling for visibility */
+  flex: 1 1 0;
   background-color: #171ea7;
   border: 10px solid #ccc;
-  padding: 15px; /* Optional: Add padding inside the columns for content spacing */
+  padding: 15px;
 }
