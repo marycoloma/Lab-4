@@ -10,6 +10,6 @@
   flex: 1 1 0; /* Makes both columns grow equally and have an initial size of 0 to ensure true equal width regardless of content */
   /* Optional: Add some basic styling for visibility */
   background-color: #171ea7;
-  border: 1px solid #ccc;
+  border: 10px solid #ccc;
   padding: 15px; /* Optional: Add padding inside the columns for content spacing */
 }
