@@ -1,14 +1,74 @@
-.container {
-  display: flex;
-  gap: 10px;
-  padding: 10px;
+/* Reset & box sizing */
+* {
   box-sizing: border-box;
-  width: 100%;
 }
 
-.column {
-  flex: 1 1 0;
-  background-color: #171ea7;
-  border: 10px solid #ccc;
+/* Page layout */
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Base flex container */
+.container {
+  display: flex;
+  border: 2px solid #000;
+  margin-bottom: 24px;
+}
+
+/* Shared box styling */
+.box {
+  height: 50px;
+  background-color: #cfe2f3;
+  border: 2px solid #000;
+}
+
+/* Two equal columns */
+.two-cols {
+  gap: 10px;
   padding: 10px;
+}
+
+.two-cols .box {
+  flex: 1;
+}
+
+/* Three equal columns */
+.three-equal {
+  gap: 15px;
+  padding: 15px;
+}
+
+.three-equal .box {
+  flex: 1;
+}
+
+/* Three unequal columns */
+.three-unequal {
+  gap: 12px;
+  padding: 12px;
+}
+
+.three-unequal .box {
+  flex: 1;
+}
+
+.three-unequal .large {
+  flex: 2;
+}
+
+/* Four equal columns */
+.four-cols {
+  gap: 12px;
+  padding: 12px;
+}
+
+.four-cols .box {
+  flex: 1;
+}
+
+/* Footer */
+.footer {
+  justify-content: center;
 }
