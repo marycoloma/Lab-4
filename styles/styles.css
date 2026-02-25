@@ -62,16 +62,18 @@ body {
 .four-cols-footer {
   padding: 12px;
   gap: 12px;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-wrap: wrap; /* allows wrapping */
+  justify-content: center; /* centers wrapped items */
 }
 
+/* First four boxes */
 .four-cols-footer .box {
-  flex: 1;
+  flex: 1 1 calc(25% - 12px); /* EXACT 4 columns */
 }
 
-/* Footer box (the 5th box) */
+/* Footer box — forces it onto its own row */
 .footer-box {
-  flex-basis: 100%;
-  max-width: 120px; /* keeps it small and centered like the sample */
+  flex: 0 0 120px; /* fixed width */
+  margin-left: auto;
+  margin-right: auto; /* centers it */
 }
