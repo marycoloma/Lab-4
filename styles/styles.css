@@ -44,7 +44,7 @@ body {
   flex: 1;
 }
 
-/* Three unequal columns — 12px spacing, 2px borders */
+/* Three unequal columns — 12px spacing */
 .three-unequal {
   padding: 12px;
   gap: 12px;
@@ -58,7 +58,7 @@ body {
   flex: 2;
 }
 
-/* Four equal columns — 12px spacing, 2px borders */
+/* Four equal columns — 12px spacing */
 .four-cols {
   padding: 12px;
   gap: 12px;
