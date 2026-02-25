@@ -58,18 +58,20 @@ body {
   flex: 2;
 }
 
-/* Four equal columns — 12px spacing */
-.four-cols {
+/* Four equal columns + footer — ONE container with 5 boxes */
+.four-cols-footer {
   padding: 12px;
   gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.four-cols .box {
+.four-cols-footer .box {
   flex: 1;
 }
 
-/* Footer centered */
-.footer {
-  justify-content: center;
-  padding: 12px;
+/* Footer box (the 5th box) */
+.footer-box {
+  flex-basis: 100%;
+  max-width: 120px; /* keeps it small and centered like the sample */
 }
