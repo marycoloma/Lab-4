@@ -1,4 +1,4 @@
-/* Reset & box sizing */
+/* Reset */
 * {
   box-sizing: border-box;
 }
@@ -24,30 +24,30 @@ body {
   border: 2px solid #000;
 }
 
-/* Two equal columns */
+/* Two equal columns — 10px spacing */
 .two-cols {
-  gap: 10px;
   padding: 10px;
+  gap: 10px;
 }
 
 .two-cols .box {
   flex: 1;
 }
 
-/* Three equal columns */
+/* Three equal columns — 15px spacing */
 .three-equal {
-  gap: 15px;
   padding: 15px;
+  gap: 15px;
 }
 
 .three-equal .box {
   flex: 1;
 }
 
-/* Three unequal columns */
+/* Three unequal columns — 12px spacing, 2px borders */
 .three-unequal {
-  gap: 12px;
   padding: 12px;
+  gap: 12px;
 }
 
 .three-unequal .box {
@@ -58,17 +58,18 @@ body {
   flex: 2;
 }
 
-/* Four equal columns */
+/* Four equal columns — 12px spacing, 2px borders */
 .four-cols {
-  gap: 12px;
   padding: 12px;
+  gap: 12px;
 }
 
 .four-cols .box {
   flex: 1;
 }
 
-/* Footer */
+/* Footer centered */
 .footer {
   justify-content: center;
+  padding: 12px;
 }
