@@ -1,30 +1,26 @@
-/* Reset */
 * {
   box-sizing: border-box;
 }
 
-/* Page layout */
 body {
   margin: 0;
   padding: 20px;
   font-family: Arial, sans-serif;
 }
 
-/* Base flex container */
 .container {
   display: flex;
   border: 2px solid #000;
   margin-bottom: 24px;
 }
 
-/* Shared box styling */
 .box {
   height: 50px;
   background-color: #cfe2f3;
   border: 2px solid #000;
 }
 
-/* Two equal columns — 10px spacing */
+/* Two equal columns */
 .two-cols {
   padding: 10px;
   gap: 10px;
@@ -34,7 +30,7 @@ body {
   flex: 1;
 }
 
-/* Three equal columns — 15px spacing */
+/* Three equal columns */
 .three-equal {
   padding: 15px;
   gap: 15px;
@@ -44,7 +40,7 @@ body {
   flex: 1;
 }
 
-/* Three unequal columns — 12px spacing */
+/* Three unequal columns */
 .three-unequal {
   padding: 12px;
   gap: 12px;
@@ -58,20 +54,18 @@ body {
   flex: 2;
 }
 
-/* Four equal columns + footer — ONE container with 5 boxes */
+/* Four equal columns + footer */
 .four-cols-footer {
   padding: 12px;
   gap: 12px;
-  flex-wrap: wrap; /* allows wrapping */
-  justify-content: center; /* centers wrapped items */
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-/* First four boxes */
 .four-cols-footer .box {
-  flex: 1 1 calc(25% - 12px); /* EXACT 4 columns */
+  flex: 1 1 calc(25% - 12px);
 }
 
-/* Footer box — forces it onto its own row */
 .footer-box {
   flex: 0 0 100%;
 }
